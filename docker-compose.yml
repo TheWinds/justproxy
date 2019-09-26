@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  justproxy:
+    image: thewinds/jsutproxy
+    container_name: justproxy
+    restart: always
+    network_mode: host
+    volumes: 
+    - /var/justproxy:.
